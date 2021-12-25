@@ -1,0 +1,8 @@
+{
+  "xmzs.sound.foo": {
+    "replace": true,
+    "sounds": [
+      "xmzs/bar"
+    ]
+  }
+}
