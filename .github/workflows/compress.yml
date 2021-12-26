@@ -1,0 +1,22 @@
+name: 压缩资源包
+
+on:
+  release:
+     types:
+       - published
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: 移动项目
+      run: ./makepackage.sh
+
+    - name: 上传资源包
+      uses: actions/upload-artifact@v2
+      with:
+        name: xmzs-resources-${{ steps.ref.outputs.branch }}
+        path: build/*.zip
