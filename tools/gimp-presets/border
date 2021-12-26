@@ -1,0 +1,12 @@
+# GIMP '投影' settings
+
+(time 0)
+(x 0)
+(y 0)
+(radius 0)
+(grow-shape circle)
+(grow-radius 1)
+(color (color-rgba 0 0 0 1))
+(opacity 0.80000000000000004)
+
+# end of '投影' settings
