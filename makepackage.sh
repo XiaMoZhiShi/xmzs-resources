@@ -23,4 +23,8 @@ zip -d xmzs-resources.zip "*.xcf"
 echo "移动文档..."
 mv xmzs-resources.zip build
 
+echo "生成sha1..."
+changeDir "$BUILD_DIR"
+sha1sum xmzs-resources.zip | cut -d ' ' -f1 > xmzs-resources-sha1
+
 echo "完成!"
