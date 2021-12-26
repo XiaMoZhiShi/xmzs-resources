@@ -16,7 +16,7 @@ jobs:
       run: ./makepackage.sh
 
     - name: 上传到releases
-      uses: svenstaro/upload-release-action@v2
+      uses: AButler/upload-release-assets@v2.0
       with:
         files: 'build/*'
         repo-token: ${{ secrets.GITHUB_TOKEN }}
