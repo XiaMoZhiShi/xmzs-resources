@@ -1,0 +1,13 @@
+name: 压缩资源包
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: 构建
+      run: ./makepackage.sh

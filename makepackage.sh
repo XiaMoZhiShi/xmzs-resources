@@ -16,8 +16,11 @@ if [ ! -d "$BUILD_DIR" ];then
     mkdir -vp "$BUILD_DIR"
 fi
 
-changeDir "$BUILD_DIR"
-
 echo "创建压缩文档..."
-zip -9 xmzs-resources.zip ../assets/**/* 
+zip -9 -r xmzs-resources.zip ./assets pack*
 zip -d xmzs-resources.zip "*.xcf"
+
+echo "移动文档..."
+mv xmzs-resources.zip build
+
+echo "完成!"
