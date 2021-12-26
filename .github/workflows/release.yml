@@ -1,4 +1,4 @@
-name: 压缩资源包
+name: 压缩资源包(release)
 
 on:
   release:
