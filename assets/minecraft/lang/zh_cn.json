@@ -1,4 +1,7 @@
 {
+  "pack.source.server": "",
+  "pack.nameAndSource": "%s",
+
   "option.iris.back": "返回",
   "option.iris.profile": "预设",
 
