@@ -1,6 +1,6 @@
-name: 压缩资源包(push)
+name: 压缩资源包(pr)
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   build:
