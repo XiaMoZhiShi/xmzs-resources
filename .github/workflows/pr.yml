@@ -9,5 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: 安装工具依赖
+      run: sudo apt-get install -y gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad
+
     - name: 构建
       run: ./makepackage.sh
