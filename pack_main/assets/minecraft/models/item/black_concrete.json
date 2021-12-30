@@ -1,0 +1,9 @@
+{
+    "parent": "block/black_concrete",
+    "textures": {
+        "layer0": "block/black_concrete"
+    },
+    "overrides": [
+        { "predicate": { "custom_model_data": 1 }, "model": "xmzs/limbo_adv_cover" }
+	]
+}

@@ -1,0 +1,6 @@
+pack_directory = "ROOT"
+output_file_path = "build/OUTNAME.zip"
+
+#生成zip文件后就不要再允许以其他的方式更改压缩文档
+zip_spec_conformance_level = "disregard"
+size_increasing_zip_obfuscation = true

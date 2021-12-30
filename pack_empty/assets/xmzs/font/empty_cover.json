@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+			"type": "bitmap",
+			"file": "xmzs:covers/empty.png",
+			"height": 32,
+			"ascent": 19,
+			"chars": [
+				"1"
+			]
+		}
+	]
+}

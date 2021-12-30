@@ -3,15 +3,6 @@ set -e
 
 readonly BUILD_DIR="$PWD/build";
 
-readonly PACKSQUASH_OPTIONS="
-pack_directory = \"$PWD\"
-output_file_path = \"$PWD/build/xmzs-resources.zip\"
-
-#生成zip文件后就不要再允许以其他的方式更改压缩文档
-zip_spec_conformance_level = \"disregard\"
-size_increasing_zip_obfuscation = true
-"
-
 function changeDir()
 {
     local target="$1"
@@ -20,16 +11,25 @@ function changeDir()
     cd "$target"
 }
 
+function makepack()
+{
+    local directory="$1"
+    local name="$2"
+
+    local option;
+    option="$(sed "s#ROOT#$directory#g" tools/packsquash-config | sed "s#OUTNAME#$name#g")"
+
+    echo "$option" | tools/packsquash
+    sha1sum "build/$name.zip" | cut -d ' ' -f1 > "build/$name"-sha1
+}
+
 echo "创建目录..."
 if [ ! -d "$BUILD_DIR" ];then
     mkdir -vp "$BUILD_DIR"
 fi
 
 echo "创建压缩文档..."
-echo "$PACKSQUASH_OPTIONS" | tools/packsquash
-
-echo "生成sha1..."
-changeDir "$BUILD_DIR"
-sha1sum xmzs-resources.zip | cut -d ' ' -f1 > xmzs-resources-sha1
+makepack "$PWD/pack_main" "xmzs-resources"
+makepack "$PWD/pack_empty" "empty"
 
 echo "完成!"
