@@ -265,6 +265,13 @@
 			"height": 5,
 			"ascent": 5,
 			"chars": ["Z"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:diaotu/o.png",
+			"height": 32,
+			"ascent": 15,
+			"chars": ["J"]
 		}
 	]
 }

@@ -1,0 +1,14 @@
+{
+    "providers":
+    [
+        {
+			"type": "bitmap",
+			"file": "xmzs:misc/white.png",
+			"height": 1024,
+			"ascent": 512,
+			"chars": [
+				"W"
+			]
+		}
+    ]
+}
