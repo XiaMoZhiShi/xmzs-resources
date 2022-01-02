@@ -1,31 +1,18 @@
 {
-  "pack": {
-      "description": [
-          {
-              "translate": "%1$s%3427657$s",
-              "with": [
-                  [
-                      [
-                          "",
-                          ":eyes:"
-                      ]
-                  ],
-                  [
-                      {
-                          "translate": "space.-36",
-                          "font": "space:default",
-                          "with": [
-                              {
-                                  "text": "1",
-                                  "font": "xmzs:empty_cover"
-                              }
-                          ],
-                          "color": "white"
-                      }
-                  ]
-              ]
-          }
-      ],
-      "pack_format": 8
-  }
+    "pack": {
+        "description": [
+            {
+                "translate": "space.-36",
+                "font": "space:default",
+                "with": [
+                    {
+                        "text": "1",
+                        "font": "xmzs:empty_cover"
+                    }
+                ],
+                "color": "white"
+            }
+        ],
+        "pack_format": 8
+    }
 }
