@@ -272,6 +272,12 @@
 			"height": 32,
 			"ascent": 15,
 			"chars": ["J"]
+		},
+        {
+			"type": "bitmap",
+			"file": "minecraft:misc/forcefield.png",
+			"ascent": 7,
+			"chars": ["B"]
 		}
 	]
 }
