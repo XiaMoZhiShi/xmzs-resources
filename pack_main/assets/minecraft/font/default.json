@@ -1309,7 +1309,7 @@
 		},
 		{
 			"type": "bitmap",
-			"file": "minecraft:item/honey_bottle.png",
+			"file": "minecraft:item/mushroom_stew.png",
 			"ascent": 7,
 			"chars": ["\ue3cf"]
 		},
@@ -1351,13 +1351,13 @@
 		},
 		{
 			"type": "bitmap",
-			"file": "minecraft:item/cod.png",
+			"file": "minecraft:item/cooked_mutton.png",
 			"ascent": 7,
 			"chars": ["\ue3d6"]
 		},
 		{
 			"type": "bitmap",
-			"file": "minecraft:item/salmon.png",
+			"file": "minecraft:item/rotten_flesh.png",
 			"ascent": 7,
 			"chars": ["\ue3d7"]
 		},
@@ -1841,7 +1841,7 @@
 		},
 		{
 			"type": "bitmap",
-			"file": "minecraft:item/chain.png",
+			"file": "minecraft:item/soul_campfire.png",
 			"ascent": 7,
 			"chars": ["\ue426"]
 		},
@@ -2180,6 +2180,12 @@
 			"file": "minecraft:item/wheat.png",
 			"ascent": 7,
 			"chars": ["\ue45e"]
+		},
+		{
+			"type": "bitmap",
+			"file": "minecraft:item/chain.png",
+			"ascent": 7,
+			"chars": ["\ue45f"]
 		}
     ]
 }
