@@ -18,11 +18,11 @@ function makepack()
     local finalName="${directoryName//pack_/}"
 
     local option_gen="pack_directory = '$directory'
-output_file_path = 'build/${directoryName//pack_/}.zip'
+output_file_path = '$PWD/build/${directoryName//pack_/}.zip'
 $(cat "$directory/config.toml")"
 
     echo "$option_gen" | tools/packsquash || echo "$option_gen"
-    sha1sum "build/$finalName.zip" | cut -d ' ' -f1 > "build/$finalName"-sha1
+    sha1sum "$PWD/build/$finalName.zip" | cut -d ' ' -f1 > "$PWD/build/$finalName"-sha1
 }
 
 for d in pack_* ;do
