@@ -25,14 +25,14 @@ $(cat "$directory/config.toml")"
     sha1sum "$PWD/build/$finalName.zip" | cut -d ' ' -f1 > "$PWD/build/$finalName"-sha1
 }
 
-for d in pack_* ;do
-    makepack "$PWD/$d"
-done;
-
 echo "创建目录..."
 if [ ! -d "$BUILD_DIR" ];then
     mkdir -vp "$BUILD_DIR"
 fi
+for d in pack_* ;do
+    makepack "$PWD/$d"
+done;
+
 
 echo "创建压缩文档..."
 #makepack "$PWD/pack_main" "xmzs-resources"
