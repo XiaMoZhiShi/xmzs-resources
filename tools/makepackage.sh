@@ -14,14 +14,20 @@ function changeDir()
 function makepack()
 {
     local directory="$1"
-    local name="$2"
+    local directoryName="${directory##*/}"
+    local finalName="${directoryName//pack_/}"
 
-    local option;
-    option="$(sed "s#ROOT#$directory#g" tools/packsquash-config | sed "s#OUTNAME#$name#g")"
+    local option_gen="pack_directory = '$directory'
+output_file_path = 'build/${directoryName//pack_/}.zip'
+$(cat "$directory/config.toml")"
 
-    echo "$option" | tools/packsquash
-    sha1sum "build/$name.zip" | cut -d ' ' -f1 > "build/$name"-sha1
+    echo "$option_gen" | tools/packsquash || echo "$option_gen"
+    sha1sum "build/$finalName.zip" | cut -d ' ' -f1 > "build/$finalName"-sha1
 }
+
+for d in pack_* ;do
+    makepack "$PWD/$d"
+done;
 
 echo "创建目录..."
 if [ ! -d "$BUILD_DIR" ];then
@@ -29,7 +35,7 @@ if [ ! -d "$BUILD_DIR" ];then
 fi
 
 echo "创建压缩文档..."
-makepack "$PWD/pack_main" "xmzs-resources"
-makepack "$PWD/pack_empty" "empty"
+#makepack "$PWD/pack_main" "xmzs-resources"
+#makepack "$PWD/pack_empty" "empty"
 
 echo "完成!"
