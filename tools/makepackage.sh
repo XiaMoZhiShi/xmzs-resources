@@ -29,6 +29,11 @@ echo "创建目录..."
 if [ ! -d "$BUILD_DIR" ];then
     mkdir -vp "$BUILD_DIR"
 fi
+
+for s in tools/premake_*; do
+    "$s"
+done;
+
 for d in pack_* ;do
     makepack "$PWD/$d"
 done;
