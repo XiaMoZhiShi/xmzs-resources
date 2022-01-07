@@ -501,25 +501,25 @@
 		},
 		{
 			"type": "bitmap",
-			"file": "xmzs:item/lether_boots.png",
+			"file": "xmzs:item/leather_boots.png",
 			"ascent": 7,
 			"chars": ["\ue348"]
 		},
 		{
 			"type": "bitmap",
-			"file": "xmzs:item/lether_leggings.png",
+			"file": "xmzs:item/leather_leggings.png",
 			"ascent": 7,
 			"chars": ["\ue349"]
 		},
 		{
 			"type": "bitmap",
-			"file": "xmzs:item/lether_chestplate.png",
+			"file": "xmzs:item/leather_chestplate.png",
 			"ascent": 7,
 			"chars": ["\ue34a"]
 		},
 		{
 			"type": "bitmap",
-			"file": "xmzs:item/lether_helmet.png",
+			"file": "xmzs:item/leather_helmet.png",
 			"ascent": 7,
 			"chars": ["\ue34b"]
 		},
