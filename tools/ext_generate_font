@@ -1,0 +1,11 @@
+#!/bin/bash
+mkdir -vp build/work
+
+git clone https://github.com/InventivetalentDev/minecraft-assets.git --depth=1 --single-branch --branch 1.18.1 build/work
+
+cp pack_xmzs-resources/assets build/work/ -r
+
+./tools/fontgen.AppImage --input ./tools/fontconfig.json --output pack_xmzs-resources/assets/minecraft/font/default.json
+
+mv page_0.png pack_xmzs-resources-bedrock/font/glyph_E3.png
+mv page_1.png pack_xmzs-resources-bedrock/font/glyph_E4.png

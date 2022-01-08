@@ -1,2 +1,0 @@
-#!/bin/bash
-./tools/fontgen.AppImage --input ./tools/fontconfig.json --output pack_xmzs-resources/assets/minecraft/font/default.json

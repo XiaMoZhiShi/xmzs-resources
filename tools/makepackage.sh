@@ -30,17 +30,14 @@ if [ ! -d "$BUILD_DIR" ];then
     mkdir -vp "$BUILD_DIR"
 fi
 
-for s in tools/premake_*; do
+echo "运行扩展脚本..."
+for s in tools/ext_*; do
     "$s"
 done;
 
+echo "创建压缩文档..."
 for d in pack_* ;do
     makepack "$PWD/$d"
 done;
-
-
-echo "创建压缩文档..."
-#makepack "$PWD/pack_main" "xmzs-resources"
-#makepack "$PWD/pack_empty" "empty"
 
 echo "完成!"
