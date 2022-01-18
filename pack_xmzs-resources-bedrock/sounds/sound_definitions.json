@@ -1,0 +1,20 @@
+{
+    "player.respawn.1": {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "sounds/respawn-bgm/1",
+                "stream": true
+            }
+        ]
+    },
+    "player.respawn.2": {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "sounds/respawn-bgm/2",
+                "stream": true
+            }
+        ]
+    }
+}

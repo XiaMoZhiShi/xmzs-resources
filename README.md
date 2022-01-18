@@ -13,6 +13,10 @@
         * pack_empty中为了尽可能缩减压缩包大小，只在lang中保留了`space.-36`
 * [DartCat25](https://www.planetminecraft.com/member/dartcat25/)的[Menus - Enchanted](https://www.planetminecraft.com/texture-pack/menus-enchanted/)
     * 没有作出任何修改
+* [Re:ゼロから始める異世界生活](http://re-zero-anime.jp/)
+    * player.respawn.1 的音效截取自 Re:ゼロから始める異世界生活 スペシャルサウンドトラック 1 魔女の呼び声
+    * player.respawn.2 的音效截取自 Re:ゼロから始める異世界生活TVアニメーション
+    * 以上版权所有：©長月達平・株式会社KADOKAWA刊／Re:ゼロから始める異世界生活製作委員会
 
 ## 屏幕截图
 ![1](screenshots/2022-01-17_22-40-28_的屏幕截图.png)
