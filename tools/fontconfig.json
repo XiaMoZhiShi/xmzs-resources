@@ -65,27 +65,6 @@
             }
         },
         {
-            "type": "tilemap",
-            "ascent": 7,
-            "tile":
-            {
-                "glyph_ignore": false,
-                "size": 8,
-                "startsAt":
-                {
-                    "x": 0,
-                    "y": 0
-                },
-                "endsAt":
-                {
-                    "x": 10,
-                    "y": 1
-                },
-                "resource_location": "minecraft:map/map_icons.png",
-                "texture_path": "./build/work"
-            }
-        },
-        {
             "prefix": "item/music_disc_",
             "values":
             [
@@ -451,6 +430,27 @@
                 "slow_falling", "slowness", "speed", "strength",
                 "unluck", "water_breathing", "weakness", "wither"
             ]
+        },
+        {
+            "type": "tilemap",
+            "ascent": 7,
+            "tile":
+            {
+                "glyph_ignore": false,
+                "size": 8,
+                "startsAt":
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                "endsAt":
+                {
+                    "x": 10,
+                    "y": 1
+                },
+                "resource_location": "minecraft:map/map_icons.png",
+                "texture_path": "./build/work"
+            }
         }
     ],
     "glyph":
