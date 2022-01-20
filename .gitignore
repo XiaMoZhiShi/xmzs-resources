@@ -1,3 +1,5 @@
 build/
 
 ignore_*.xcf
+
+pack_xmzs-resources-bedrock/font/
