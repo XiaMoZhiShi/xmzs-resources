@@ -5,7 +5,7 @@ git clone https://github.com/InventivetalentDev/minecraft-assets.git --depth=1 -
 
 cp pack_xmzs-resources/assets build/work/ -r
 
-./tools/fontgen.AppImage --input ./tools/fontconfig.json --output pack_xmzs-resources/assets/minecraft/font/default.json
+./tools/fontgen.AppImage --input ./tools/fontconfig.json
 cp pack_xmzs-resources/assets/minecraft/font/default.json pack_xmzs-resources/assets/minecraft/font/uniform.json
 
 mv page_0.png pack_xmzs-resources-bedrock/font/glyph_E3.png
