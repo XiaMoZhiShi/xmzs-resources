@@ -10,3 +10,5 @@ cp pack_xmzs-resources/assets/minecraft/font/default.json pack_xmzs-resources/as
 
 mv page_0.png pack_xmzs-resources-bedrock/font/glyph_E2.png
 mv page_1.png pack_xmzs-resources-bedrock/font/glyph_E3.png
+
+rm /dev/shm/fontgen_*
