@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+
+./tools/overlayer.AppImage --input ./tools/xmzs-resources-overlay.json

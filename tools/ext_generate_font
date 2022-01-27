@@ -1,7 +1,12 @@
 #!/bin/bash
-mkdir -vp build/work
+if [ ! -d build/work ];then
+    mkdir -vp build/work
+fi
 
+#还不知道如何确定build/work中是否已构建，所以暂时允许git返回非0
 git clone https://github.com/InventivetalentDev/minecraft-assets.git --depth=1 --single-branch --branch 1.18.1 build/work
+
+set -e
 
 cp pack_xmzs-resources/assets build/work/ -r
 
