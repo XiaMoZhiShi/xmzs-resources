@@ -10,7 +10,10 @@ set -e
 
 cp pack_xmzs-resources/assets build/work/ -r
 
-./tools/fontgen.AppImage --input ./tools/fontconfig.json
+wget https://github.com/XiaMoZhiShi/FontJsonGenerator/releases/download/0.0.2/fontgen.AppImage -O build/fontgen.AppImage
+chmod +x build/fontgen.AppImage
+
+./build/fontgen.AppImage --input ./tools/fontconfig.json
 cp pack_xmzs-resources/assets/minecraft/font/default.json pack_xmzs-resources/assets/minecraft/font/uniform.json
 
 mkdir -vp pack_xmzs-resources-bedrock/font/

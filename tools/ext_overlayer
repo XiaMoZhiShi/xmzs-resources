@@ -1,4 +1,7 @@
 #!/bin/bash
 set -e
 
-./tools/overlayer.AppImage --input ./tools/xmzs-resources-overlay.json
+wget https://github.com/XiaMoZhiShi/TextureOverlayer/releases/download/0.0.0/overlayer.AppImage -O build/overlayer.AppImage
+chmod +x build/overlayer.AppImage
+
+./build/overlayer.AppImage --input ./tools/xmzs-resources-overlay.json
