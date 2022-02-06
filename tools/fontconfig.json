@@ -431,6 +431,7 @@
                 "unluck", "water_breathing", "weakness", "wither"
             ]
         },
+        //地图
         {
             "type": "tilemap",
             "ascent": 7,
