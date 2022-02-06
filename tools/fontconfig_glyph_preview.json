@@ -451,6 +451,140 @@
                 "resource_location": "minecraft:map/map_icons.png",
                 "texture_path": "./build/work"
             }
+        },
+        //玻璃
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "glass", "tinted_glass",
+                "red_stained_glass", "blue_stained_glass"
+            ]
+        },
+        //染色玻璃
+        {
+            "prefix": "block/",
+            "suffix": "stained_glass",
+            "values":
+            [
+                "black_", "blue_",
+                "brown_", "cyan_", "gray_",
+                "green_", "light_blue_", "light_gray_",
+                "lime_", "magenta_", "orange_",
+                "pink_", "purple_", "red_", "white_",
+                "yellow_"
+            ]
+        },
+        //树苗
+        {
+            "prefix": "block/",
+            "suffix": "_sapling",
+            "values":
+            [
+                "oak", "birch", "acacia", "jungle",
+                "spruce", "dark_oak"
+            ]
+        },
+        //花
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "dandelion", "poppy", "blue_orchid", "allium",
+                "azure_bluet", "red_tulip", "orange_tulip", "white_tulip",
+                "pink_tulip", "oxeye_daisy", "cornflower", "lily_of_the_valley",
+                "wither_rose",
+                "sunflower_front", "lilac_top", "rose_bush_top",
+                "peony_top", "tall_grass_top", "large_fern_top"
+            ]
+        },
+        //蘑菇
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "brown_mushroom", "red_mushroom"
+            ]
+        },
+        //绯红菌相关
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "crimson_fungus", "warped_fungus",
+                "crimson_roots", "warped_roots",
+                "weeping_vines_plant", "twisting_vines"
+            ]
+        },
+        //杂项2
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "hanging_roots", "vine", "glow_lichen", "lily_pad",
+                "bamboo_large_leaves", "bamboo_small_leaves",
+                "bamboo_stage0"
+            ]
+        },
+        //珊瑚
+        {
+            "prefix": "block/",
+            "suffix": "_coral",
+            "values":
+            [
+                "tube", "brain", "bubble", "horn"
+            ]
+        },
+        {
+            "prefix": "block/dead_",
+            "suffix": "_coral",
+            "values":
+            [
+                "tube", "brain", "bubble", "horn"
+            ]
+        },
+        {
+            "prefix": "block/",
+            "suffix": "_coral_fan",
+            "values":
+            [
+                "tube", "brain", "bubble", "horn"
+            ]
+        },
+        {
+            "prefix": "block/dead_",
+            "suffix": "_coral_fan",
+            "values":
+            [
+                "tube", "brain", "bubble", "horn"
+            ]
+        },
+        //紫水晶
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "small_amethyst_bud", "medium_amethyst_bud",
+                "large_amethyst_bud", "amethyst_cluster"
+            ]
+        },
+        //活板门
+        {
+            "prefix": "block/",
+            "suffix": "_trapdoor",
+            "values":
+            [
+                "oak", "iron", "birch", "acacia", "jungle", "spruce",
+                "warped", "crimson", "dark_oak"
+            ]
+        },
+        //紫颂花方块
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "chorus_flower", "chorus_flower_dead"
+            ]
         }
     ],
     "glyph":
