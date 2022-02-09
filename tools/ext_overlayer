@@ -5,3 +5,5 @@ wget https://github.com/XiaMoZhiShi/TextureOverlayer/releases/download/0.0.1/ove
 chmod +x build/overlayer.AppImage
 
 ./build/overlayer.AppImage --input ./tools/xmzs-resources-overlay.json
+
+mv build/overlayer.AppImage build/work
