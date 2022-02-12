@@ -365,13 +365,14 @@
                 "crimson", "warped"
             ]
         },
-        //暂时弃用
+        //Symbolic
         {
             "namespace": "xmzs",
-            "suffix": "_generic",
+            "prefix": "char/",
+            "suffix": "_symbolic",
             "values":
             [
-                "button", "pressure_plate", "trapdoor", "fencegate"
+                "ender_pearl", "", "", ""
             ]
         },
         //告示牌
@@ -596,6 +597,7 @@
         "from": 0,
         "to": 65536,
         "pack_path": "./build/work",
+        "fallback": "xmzs:char/unknown",
         "save_step": false,
         "spacing_x": 0,
         "spacing_y": 0
