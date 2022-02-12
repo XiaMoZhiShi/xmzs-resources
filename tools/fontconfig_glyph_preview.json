@@ -250,14 +250,12 @@
                 "rabbit_foot"
             ]
         },
-        //Symbolic
         {
             "namespace": "xmzs",
-            "prefix": "char/",
-            "suffix": "_symbolic",
+            "prefix": "item/",
             "values":
             [
-                "ender_pearl", "", "", ""
+                "potion", "splash_potion", "lingering_potion", "tipped_arrow"
             ]
         },
         //染料
@@ -367,12 +365,14 @@
                 "crimson", "warped"
             ]
         },
+        //Symbolic
         {
             "namespace": "xmzs",
-            "suffix": "_generic",
+            "prefix": "char/",
+            "suffix": "_symbolic",
             "values":
             [
-                "button", "pressure_plate", "trapdoor", "fencegate"
+                "ender_pearl", "", "", ""
             ]
         },
         //告示牌
@@ -386,7 +386,7 @@
                 "crimson", "warped"
             ]
         },
-        //杂项
+        //杂项1
         {
             "prefix": "item/",
             "values":
@@ -433,6 +433,7 @@
                 "unluck", "water_breathing", "weakness", "wither"
             ]
         },
+        //地图
         {
             "type": "tilemap",
             "ascent": 7,
