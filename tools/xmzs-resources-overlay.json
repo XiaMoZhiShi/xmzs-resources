@@ -183,8 +183,8 @@
                     "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowfurnaceempty.png",
                     "color": "#FFFFFF",
                     "opacity": 1,
-                    "x": 79,
-                    "y": 34
+                    "x": 77,
+                    "y": 32
                 },
                 //火候显示
                 {
