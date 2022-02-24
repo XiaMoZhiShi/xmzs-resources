@@ -3,66 +3,99 @@
     [
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/stats_icons.png",
-            "overlay": "",
+            "overlays":[],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/stats_icons.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/accessibility.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/accessibility_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/accessibility_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/accessibility.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/checkbox.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/checkbox_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/checkbox_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/checkbox.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/recipe_book.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/recipe_book_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/recipe_book_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/recipe_book.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/resource_packs.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/resource_packs_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/resource_packs_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/resource_packs.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/social_interactions.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/social_interactions_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/social_interactions_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/social_interactions.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/widgets.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/widgets_overlay.png",
+            "overlays":
+            [
+                {        
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/widgets_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/widgets.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/recipe_button.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/recipe_button_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/recipe_button_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/recipe_button.png"
         },
         //
@@ -70,162 +103,475 @@
         //,
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/anvil.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/anvil_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/anvil_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowallow.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 99,
+                    "y": 45
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowdeny.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 176,
+                    "y": 0
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/anvil.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/beacon.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/beacon_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/beacon_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 35,
+                    "y": 136
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/beacon.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                },
+                //熔炉箭头
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowfurnacefull.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 176,
+                    "y": 14
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowfurnaceempty.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 79,
+                    "y": 34
+                },
+                //火候显示
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/uifirefull.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 176,
+                    "y": 0
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/uifireempty.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 56,
+                    "y": 36
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
-            "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace.png"
-        },
-        {
-            "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace_overlay.png",
-            "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
-            "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/furnace.png"
-        },
-        {
-            "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace_overlay.png",
-            "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
-            "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/smoker.png"
+            "output_targets":
+            [
+                "pack_xmzs-resources/assets/minecraft/textures/gui/container/blast_furnace.png",
+                "pack_xmzs-resources/assets/minecraft/textures/gui/container/furnace.png",
+                "pack_xmzs-resources/assets/minecraft/textures/gui/container/smoker.png"
+
+            ]
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/brewing_stand.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/brewing_stand_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/brewing_stand_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/brewing_stand.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/cartography_table.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/cartography_table_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/cartography_table_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowdeny.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 226,
+                    "y": 132
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowallow.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 35,
+                    "y": 31
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/cartography_table.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/crafting_table.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/crafting_table_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/crafting_table_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowallow.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 87,
+                    "y": 32
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/crafting_table.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/dispenser.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/dispenser_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/dispenser_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/dispenser.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/enchanting_table.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/enchanting_table_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/enchanting_table_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/enchanting_table.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/generic_54.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/generic_54_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/generic_54_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 139
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/generic_54.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/grindstone.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/grindstone_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/grindstone_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowdeny.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 176,
+                    "y": 0
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowallow.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 92,
+                    "y": 31
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/grindstone.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/hopper.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/hopper_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/hopper_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 50
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/hopper.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/horse.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/horse_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/horse_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/horse.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/inventory.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/inventory_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/inventory_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/inventory.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/loom.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/loom_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/loom_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/loom.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/shulker_box.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/shulker_box_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/shulker_box_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/shulker_box.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/smithing.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/smithing_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/smithing_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowdeny.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 176,
+                    "y": 0
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowallow.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 99,
+                    "y": 45
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/smithing.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/stonecutter.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/stonecutter_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/stonecutter_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 7,
+                    "y": 83
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/stonecutter.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/villager2.png",
-            "overlay": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/villager2_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/villager2_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/inventory.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 107,
+                    "y": 83
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowdeny.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 312,
+                    "y": 0
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/common/arrowallow.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1,
+                    "x": 183,
+                    "y": 35
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/villager2.png"
         },
         //
@@ -233,18 +579,28 @@
         //
         {
             "base": "overlayer_xmzs-resources/assets/modmenu/textures/gui/configure_button.png",
-            "overlay": "overlayer_xmzs-resources/assets/modmenu/textures/gui/configure_button_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/modmenu/textures/gui/configure_button_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/modmenu/textures/gui/configure_button.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/modmenu/textures/gui/filters_button.png",
-            "overlay": "overlayer_xmzs-resources/assets/modmenu/textures/gui/filters_button_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/modmenu/textures/gui/filters_button_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/modmenu/textures/gui/filters_button.png"
         },
         //
@@ -252,70 +608,94 @@
         //
         {
             "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_create_group.png",
-            "overlay": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_create_group_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_create_group_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_create_group.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_enter_password.png",
-            "overlay": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_enter_password_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_enter_password_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_enter_password.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_generic_small.png",
-            "overlay": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_generic_small_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_generic_small_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_generic_small.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_group.png",
-            "overlay": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_group_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_group_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_group.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_join_group.png",
-            "overlay": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_join_group_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_join_group_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_join_group.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat.png",
-            "overlay": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat_settings.png",
-            "overlay": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat_settings_overlay.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat_settings_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
             "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat_settings.png"
-        },
-        //
-        // FirstPerson
-        //
-        {
-            "base": "overlayer_xmzs-resources/assets/firstperson/textures/gui/cosmetics.png",
-            "overlay": "overlayer_xmzs-resources/assets/firstperson/textures/gui/cosmetics_overlay.png",
-            "base_color": "FFFFFF",
-            "overlay_color": "#8AB7EA",
-            "overlay_opacity": 1,
-            "output_target": "pack_xmzs-resources/assets/firstperson/textures/gui/cosmetics.png"
-        },
+        }
     ]
 }
