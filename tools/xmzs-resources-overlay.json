@@ -1,6 +1,27 @@
 {
     "configs":
     [
+        //
+        // 界面
+        //
+        {
+            "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/gamemode_switcher.png",
+            "overlays":
+            [
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/gamemode_switcher_overlay_mask.png",
+                    "color": "#FFFFFF",
+                    "opacity": 1
+                },
+                {
+                    "path": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/gamemode_switcher_overlay_accent.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
+            "base_color": "FFFFFF",
+            "output_target": "pack_xmzs-resources/assets/minecraft/textures/gui/container/gamemode_switcher.png"
+        },
         {
             "base": "overlayer_xmzs-resources/assets/minecraft/textures/gui/container/stats_icons.png",
             "overlays":[],
