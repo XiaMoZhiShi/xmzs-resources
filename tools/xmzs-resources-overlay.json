@@ -654,17 +654,17 @@
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_enter_password.png"
         },
         {
-            "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_generic_small.png",
+            "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_audio_devices.png",
             "overlays":
             [
                 {
-                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_generic_small_overlay.png",
+                    "path": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_audio_devices_overlay.png",
                     "color": "#8AB7EA",
                     "opacity": 1
                 }
             ],
             "base_color": "FFFFFF",
-            "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_generic_small.png"
+            "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_audio_devices.png"
         },
         {
             "base": "overlayer_xmzs-resources/assets/voicechat/textures/gui/gui_group.png",
