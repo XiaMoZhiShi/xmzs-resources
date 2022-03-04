@@ -2,6 +2,6 @@ build/
 
 ignore_*.xcf
 
-pack_xmzs-resources-bedrock/font/
+pack_*
 
 page_*.png

@@ -30,13 +30,18 @@ if [ ! -d "$BUILD_DIR" ];then
     mkdir -vp "$BUILD_DIR"
 fi
 
-echo "运行扩展脚本..."
+for d in ./src_*; do
+    outName="${d/src/pack}"
+    mkdir "$outName"
+done;
+
 for s in tools/ext_*; do
+    echo "运行扩展脚本: $s"
     "$s"
 done;
 
-echo "创建压缩文档..."
 for d in pack_* ;do
+    echo "创建压缩文档: $d"
     makepack "$PWD/$d"
 done;
 
