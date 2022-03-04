@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+
+cd src_xmzs-resources
+
+if [ -d ext_gm4 ];then
+    rm -rf ext_gm4;
+    mkdir ext_gm4;
+else
+    mkdir ext_gm4
+fi;
+
+#检查是否初始化了submodule
+if [ ! -f dep_gm4_resources/requirements.txt ];then
+    echo "错误：未找到dep_gm4_resources/requirements.txt，是不是submodule没初始化？"
+    exit 1
+fi;
+
+cp dep_gm4_resources/gm4_resource_pack/* ext_gm4 -r

@@ -3,5 +3,6 @@ build/
 ignore_*.xcf
 
 pack_*
+src_xmzs-resources/ext_gm4
 
 page_*.png

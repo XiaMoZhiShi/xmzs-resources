@@ -1,0 +1,3 @@
+[submodule "src_xmzs-resources/dep_gm4_resources"]
+	path = src_xmzs-resources/dep_gm4_resources
+	url = https://github.com/Gamemode4Dev/GM4_Resources.git

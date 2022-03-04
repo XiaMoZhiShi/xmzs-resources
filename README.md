@@ -3,7 +3,7 @@
 
 本资源包集成了以下内容，以提供更好的服务器体验：
 * [Gamemode4资源包](https://github.com/Gamemode4Dev/GM4_Resources)
-    * 目前只集成了部分翻译，翻译由服务器团队自行完成
+    * 集成了除翻译外的内容(gm4_resource_pack)，简体中文翻译由服务器团队自行完成
 * [基岩版特殊符号](assets/xmzs/textures/bedrock_glyphs/)
     * 来源于Minecraft基岩版内置资源包
 * 资源包封面字体来源于[这里](https://www.lexaloffle.com/bbs/?tid=3760)
