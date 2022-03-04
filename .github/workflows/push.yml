@@ -1,6 +1,9 @@
 name: 压缩资源包(push)
 
-on: [push]
+on:
+  push:
+    branches:
+      - "main"
 
 jobs:
   build:
