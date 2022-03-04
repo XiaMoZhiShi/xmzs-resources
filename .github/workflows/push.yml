@@ -1,4 +1,4 @@
-name: 压缩资源包(pr)
+name: 压缩资源包(push)
 
 on: [push]
 
