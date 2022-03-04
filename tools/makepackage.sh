@@ -35,6 +35,9 @@ function makedir()
     fi;
 }
 
+echo "初始化submodule"
+git submodule init
+
 makedir "$BUILD_DIR"
 
 for d in ./src_*; do
