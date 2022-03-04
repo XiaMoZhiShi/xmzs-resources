@@ -36,7 +36,7 @@ function makedir()
 }
 
 echo "初始化submodule"
-git submodule init
+git submodule update --init --recursive
 
 makedir "$BUILD_DIR"
 
