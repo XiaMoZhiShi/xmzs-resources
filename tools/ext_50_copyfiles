@@ -1,7 +1,0 @@
-#!/bin/bash
-set -e
-
-for srcName in ./src_*; do
-    productName="${srcName/src/pack}"
-    cp "$srcName/main/" "$productName/" -r
-done;

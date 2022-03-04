@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+for srcName in ./src_*; do
+    productName="${srcName/src/pack}"
+
+    if [ -n "$(ls "$srcName" | grep "ext_")" ];then
+        for extPack in "$srcName"/ext_*; do
+            cp "$extPack"/* "$productName/" -r
+        done;
+    fi
+
+    cp "$srcName/main"/* "$productName/" -r
+done;

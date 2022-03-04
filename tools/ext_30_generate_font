@@ -8,9 +8,14 @@ git clone https://github.com/InventivetalentDev/minecraft-assets.git --depth=1 -
 
 set -e
 
-cp pack_xmzs-resources/assets build/work/ -r
+#复制文件用于生成基岩版资源包的字体
+for subpack in src_xmzs-resources/ext_*; do
+    cp "$subpack"/assets build/work -r
+done;
 
-wget https://github.com/XiaMoZhiShi/FontJsonGenerator/releases/download/0.0.2/fontgen.AppImage -O build/fontgen.AppImage
+cp src_xmzs-resources/main/assets build/work -r
+
+#wget https://github.com/XiaMoZhiShi/FontJsonGenerator/releases/download/0.0.3/fontgen.AppImage -O build/fontgen.AppImage
 chmod +x build/fontgen.AppImage
 
 ./build/fontgen.AppImage --input ./tools/fontconfig.json

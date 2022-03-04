@@ -25,14 +25,21 @@ $(cat "$directory/config.toml")"
     sha1sum "$PWD/build/$finalName.zip" | cut -d ' ' -f1 > "$PWD/build/$finalName"-sha1
 }
 
-echo "创建目录..."
-if [ ! -d "$BUILD_DIR" ];then
-    mkdir -vp "$BUILD_DIR"
-fi
+function makedir()
+{
+    local target="$1"
+
+    echo "makedir $1..."
+    if [ ! -d "$1" ]; then
+        echo "$1 不存在，将创建此目录"
+    fi;
+}
+
+makedir "$BUILD_DIR"
 
 for d in ./src_*; do
     outName="${d/src/pack}"
-    mkdir "$outName"
+    makedir "$outName"
 done;
 
 for s in tools/ext_*; do
