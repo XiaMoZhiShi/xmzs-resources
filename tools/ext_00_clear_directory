@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+for d in ./pack_*; do
+    echo "清理$d中的文件..."
+    cd "$d"
+    rm -r ./*;
+    cd ..
+done;
