@@ -15,7 +15,7 @@ done;
 
 cp src_xmzs-resources/main/assets build/work -r
 
-#wget https://github.com/XiaMoZhiShi/FontJsonGenerator/releases/download/0.0.3/fontgen.AppImage -O build/fontgen.AppImage
+wget https://github.com/XiaMoZhiShi/FontJsonGenerator/releases/download/0.0.3/fontgen.AppImage -O build/fontgen.AppImage
 chmod +x build/fontgen.AppImage
 
 ./build/fontgen.AppImage --input ./tools/fontconfig.json
