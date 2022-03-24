@@ -717,6 +717,19 @@
             ],
             "base_color": "FFFFFF",
             "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_voicechat_settings.png"
+        },
+        {
+            "base": "src_xmzs-resources/overlayer/voicechat/textures/gui/gui_player_volumes.png",
+            "overlays":
+            [
+                {
+                    "path": "src_xmzs-resources/overlayer/voicechat/textures/gui/gui_player_volumes_overlay.png",
+                    "color": "#8AB7EA",
+                    "opacity": 1
+                }
+            ],
+            "base_color": "FFFFFF",
+            "output_target": "pack_xmzs-resources/assets/voicechat/textures/gui/gui_player_volumes.png"
         }
     ]
 }

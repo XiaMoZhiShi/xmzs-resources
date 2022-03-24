@@ -31,9 +31,9 @@
     * Windows：上网搜索`unicode 中文 转换`找到相关工具，复制`\uE235`的转换结果到游戏中粘贴。
 
 ## 屏幕截图
-![1](screenshots/2022-01-17_22-40-28_的屏幕截图.png)
-![2](screenshots/2022-01-17_22-40-52_的屏幕截图.png)
-![3](screenshots/2022-01-17_22-41-25_的屏幕截图.png)
+![1](screenshots/1.png)
+![2](screenshots/2.png)
+![3](screenshots/3.png)
 
 ## 源文件目录结构
 * 所有源文件应保存在"src_xxx"目录中，由构建脚本生成完整资源包"pack_xxx"
