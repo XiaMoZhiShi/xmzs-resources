@@ -6,9 +6,9 @@ for srcName in ./src_*; do
 
     if [ -n "$(ls "$srcName" | grep "ext_")" ];then
         for extPack in "$srcName"/ext_*; do
-            cp "$extPack"/* "$productName/" -r
+            cp "$extPack"/* "$productName/" -r -v
         done;
     fi
 
-    cp "$srcName/main"/* "$productName/" -r
+    cp "$srcName/main"/* "$productName/" -r -v
 done;
