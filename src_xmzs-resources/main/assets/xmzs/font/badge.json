@@ -48,6 +48,20 @@
 			"height": 8,
 			"ascent": 7,
 			"chars": ["5"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/ningxue0.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["6"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/cacl2.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["7"]
 		}
 	]
 }
