@@ -6,6 +6,13 @@
 			"height": 64,
 			"ascent": 64,
 			"chars": ["ZX"]
+		},
+		{
+			"type": "bitmap",
+			"file": "xmzs:logo/logo_large.png",
+			"height": 64,
+			"ascent": 8,
+			"chars": ["CV"]
 		}
 	]
 }

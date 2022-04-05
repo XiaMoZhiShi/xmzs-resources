@@ -1,0 +1,53 @@
+{
+    "providers": [
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/laozhengali.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["-"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/pardofelis.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["0"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/kinopico.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["1"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/liliya.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["2"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/rozaliya.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["3"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/12727337483.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["4"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/kokomi.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["5"]
+		}
+	]
+}
