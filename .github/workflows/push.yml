@@ -20,3 +20,8 @@ jobs:
 
     - name: 构建
       run: ./makepackage.sh
+    
+    - name: 上传构建结果
+      uses: actions/upload-artifact@v2
+      with:
+        path: build/*
