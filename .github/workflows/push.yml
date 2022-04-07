@@ -25,5 +25,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         path: |
-          build/*.zip
-          build/*-sha1
+          build/
+          !build/work
