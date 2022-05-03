@@ -588,6 +588,26 @@
             [
                 "chorus_flower", "chorus_flower_dead"
             ]
+        },
+        //badges
+        {
+            "namespace": "xmzs",
+            "prefix": "badges/",
+            "values":
+            [
+                "laozhengali", "pardofelis", "rozaliya", "liliya",
+                "cacl2", "ningxue0", "emt", "kokomi",
+                "12727337483", "kinopico"
+            ]
+        },
+        //brands
+        {
+            "namespace": "nifeather",
+            "prefix": "brands/",
+            "values":
+            [
+                "vanilla", "fabric", "quilt", "forge", "bedrock", "fallback"
+            ]
         }
     ],
     "glyph":
