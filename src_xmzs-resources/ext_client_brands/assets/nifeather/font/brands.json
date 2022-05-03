@@ -1,0 +1,46 @@
+{
+    "providers": [
+        {
+			"type": "bitmap",
+			"file": "nifeather:brands/vanilla.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["0"]
+		},
+        {
+			"type": "bitmap",
+			"file": "nifeather:brands/fabric.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["1"]
+		},
+        {
+			"type": "bitmap",
+			"file": "nifeather:brands/quilt.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["2"]
+		},
+        {
+			"type": "bitmap",
+			"file": "nifeather:brands/forge.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["3"]
+		},
+        {
+			"type": "bitmap",
+			"file": "nifeather:brands/bedrock.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["4"]
+		},
+        {
+			"type": "bitmap",
+			"file": "nifeather:brands/fallback.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["X"]
+		}
+	]
+}
