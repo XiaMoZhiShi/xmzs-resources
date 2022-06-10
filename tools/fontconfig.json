@@ -597,6 +597,37 @@
             [
                 "vanilla", "fabric", "quilt", "forge", "bedrock", "fallback"
             ]
+        },
+        //1.19 物品
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "recovery_compass_10",
+                "mangrove_boat", "mangrove_chest_boat", "mangrove_door", "mangrove_propagule", "mangrove_sign",
+                "music_disc_5", "disc_fragment_5",
+                "goat_horn",
+                "echo_shard"
+            ]
+        },
+        //1.19 方块
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "sculk_shrieker_side", "sculk_catalyst_side",
+                "frogspawn",
+                "ochre_froglight_top", "verdant_froglight_top", "pearlescent_froglight_top"
+            ]
+        },
+        //1.19 方块2
+        {
+            "namespace": "xmzs",
+            "prefix": "item/",
+            "values":
+            [
+                "sculk", "sculk_vein"
+            ]
         }
     ],
     "glyph":

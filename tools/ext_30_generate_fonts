@@ -4,7 +4,7 @@ if [ ! -d build/work ];then
 fi
 
 #还不知道如何确定build/work中是否已构建，所以暂时允许git返回非0
-git clone https://github.com/InventivetalentDev/minecraft-assets.git --depth=1 --single-branch --branch 1.18.1 build/work
+git clone https://github.com/InventivetalentDev/minecraft-assets.git --depth=1 --single-branch --branch 1.19 build/work
 
 set -e
 
@@ -18,8 +18,14 @@ done;
 cp src_xmzs-resources/main/assets build/work -r
 
 #获取工具
-wget https://github.com/XiaMoZhiShi/FontJsonGenerator/releases/download/0.0.3/fontgen.AppImage -O build/fontgen.AppImage
-chmod +x build/fontgen.AppImage
+if [ -f "build/work/fontgen.AppImage" ];then
+    echo "将使用本地fontgen..."
+    cp "build/work/fontgen.AppImage" "build/fontgen.AppImage"
+    chmod +x build/fontgen.AppImage
+else
+    wget https://github.com/XiaMoZhiShi/FontJsonGenerator/releases/download/0.0.3/fontgen.AppImage -O build/fontgen.AppImage
+    chmod +x build/fontgen.AppImage
+fi;
 
 #生成default.json
 ./build/fontgen.AppImage --input ./tools/fontconfig.json
