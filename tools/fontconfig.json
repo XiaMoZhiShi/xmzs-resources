@@ -589,17 +589,6 @@
                 "chorus_flower", "chorus_flower_dead"
             ]
         },
-        //badges
-        {
-            "namespace": "xmzs",
-            "prefix": "badges/",
-            "values":
-            [
-                "laozhengali", "pardofelis", "rozaliya", "liliya",
-                "cacl2", "ningxue0", "emt", "kokomi",
-                "12727337483", "kinopico"
-            ]
-        },
         //brands
         {
             "namespace": "nifeather",
@@ -619,7 +608,7 @@
         "pack_path": "./build/work",
         "fallback": "xmzs:char/unknown",
         "save_step": false,
-        "spacing_x": 0,
-        "spacing_y": 0
+        "spacing_x": 2,
+        "spacing_y": 3
     }
 }
