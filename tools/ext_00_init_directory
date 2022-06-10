@@ -1,0 +1,20 @@
+#!/bin/bash
+set -e
+
+for d in ./pack_*; do
+    if [ -d "$d" ]; then
+        echo "清理$d中的文件..."
+        cd "$d"
+        rm -r ./*
+        cd ..
+    fi;
+done;
+
+#清理build/work
+if [ -d "build/work" ];then
+    rm -rf "build/work";
+elif [ -L "build/work" ];then
+    rm "build/work";
+fi
+
+mkdir build/temp -p

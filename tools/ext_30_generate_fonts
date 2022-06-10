@@ -3,9 +3,6 @@ if [ ! -d build/work ];then
     mkdir -vp build/work
 fi
 
-#还不知道如何确定build/work中是否已构建，所以暂时允许git返回非0
-git clone https://github.com/InventivetalentDev/minecraft-assets.git --depth=1 --single-branch --branch 1.19 build/work
-
 set -e
 
 #生成字体预览
@@ -18,9 +15,9 @@ done;
 cp src_xmzs-resources/main/assets build/work -r
 
 #获取工具
-if [ -f "build/work/fontgen.AppImage" ];then
+if [ -f "build/temp/fontgen.AppImage" ];then
     echo "将使用本地fontgen..."
-    cp "build/work/fontgen.AppImage" "build/fontgen.AppImage"
+    cp "build/temp/fontgen.AppImage" "build/fontgen.AppImage"
     chmod +x build/fontgen.AppImage
 else
     wget https://github.com/XiaMoZhiShi/FontJsonGenerator/releases/download/0.0.3/fontgen.AppImage -O build/fontgen.AppImage
@@ -34,4 +31,4 @@ fi;
 cp pack_xmzs-resources/assets/minecraft/font/default.json pack_xmzs-resources/assets/minecraft/font/uniform.json
 
 rm /dev/shm/fontgen_*
-mv build/fontgen.AppImage build/work
+mv build/fontgen.AppImage build/temp/

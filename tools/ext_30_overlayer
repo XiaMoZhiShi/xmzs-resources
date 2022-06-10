@@ -2,9 +2,9 @@
 set -e
 
 #获取工具
-if [ -f "build/work/overlayer.AppImage" ];then
+if [ -f "build/temp/overlayer.AppImage" ];then
     echo "将使用现有overlayer..."
-    cp "build/work/overlayer.AppImage" "build/overlayer.AppImage"
+    cp "build/temp/overlayer.AppImage" "build/overlayer.AppImage"
     chmod +x build/overlayer.AppImage
 else
 wget https://github.com/XiaMoZhiShi/TextureOverlayer/releases/download/0.0.3/overlayer.AppImage -O build/overlayer.AppImage
@@ -14,4 +14,4 @@ fi;
 
 ./build/overlayer.AppImage --input ./tools/xmzs-resources-overlay.json
 
-mv build/overlayer.AppImage build/work
+mv build/overlayer.AppImage build/temp/
