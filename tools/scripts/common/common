@@ -301,7 +301,11 @@ function checkTerminal()
         elif which gnome-terminal >/dev/null 2>/dev/null;then
             TERMINAL_EXEC="gnome-terminal --"
         else
-            die 255 "无法确定新终端开启方式，请手动指定TERMINAL_EXEC环境变量"
+            if [ "${AUTOTERMINAL}" == "true" ];then
+                die 255 "无法确定新终端开启方式，请手动指定TERMINAL_EXEC环境变量"
+            else
+                log LWARN "无法确定新终端开启方式，但我们并不关心这个问题，因为AUTOTERMINAL是false"
+            fi
         fi
     fi
 
