@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+DISPLAYNAME="Overlayer"
+source "$(dirname "$(readlink -f "$0")")/common/common"
+
+readonly OVERLAYER="build/temp/overlayer.AppImage"
+
+download true "${OVERLAYER}" "06c28c7d5beb74ae40ff8118fd0a33ec" "Overlayer" "https://github.com/XiaMoZhiShi/TextureOverlayer/releases/download/0.0.3/overlayer.AppImage"
+
+"${OVERLAYER}" --input ./tools/xmzs-resources-overlay.json

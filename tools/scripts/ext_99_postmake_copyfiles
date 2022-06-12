@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+
+DISPLAYNAME="复制文件"
+source "$(dirname "$(readlink -f "$0")")/common/common"
+
+for srcName in ./src_*; do
+    productName="${srcName/src/pack}"
+
+    if [ -n "$(ls "$srcName" | grep "ext_")" ];then
+        for extPack in "$srcName"/ext_*; do
+            log "复制${extPack}的文件到${productName}..."
+            cp "$extPack"/* "$productName/" -r
+        done;
+    fi
+
+    log "将${srcName}的本体复制到${productName}..."
+    cp "$srcName/main"/* "$productName/" -r
+done;

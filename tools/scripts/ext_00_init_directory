@@ -1,14 +1,20 @@
 #!/bin/bash
 set -e
 
+DISPLAYNAME="初始化目录"
+source "$(dirname "$(readlink -f "$0")")/common/common"
+
 for d in ./pack_*; do
     if [ -d "$d" ]; then
-        echo "清理$d中的文件..."
+        log "清理$d中的文件..."
         cd "$d"
-        rm -r ./*
+        rm -r ./* || log LWARN "清理$d的文件时遇到异常"
         cd ..
     fi;
 done;
+
+#清理GM4集成
+rm -r "src_xmzs-resources/ext_gm4" || true
 
 #清理build/work
 if [ -d "build/work" ];then

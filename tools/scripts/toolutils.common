@@ -1,0 +1,34 @@
+#!/bin/bash
+function download()
+{
+    local allowLocal="$1"
+    local targetFile="$2"
+    local md5="$3"
+    local name="$4"
+    local url="$5"
+
+    if [ -f "${targetFile}" ] && [ "${allowLocal}" == "true" ];then
+        log "发现${name}位于${targetFile}的本地文件，正在验证MD5..."
+
+        if [ -n "${md5}" ] && [ ! "$(md5sum "${targetFile}" | cut -d ' ' -f1)" == "${md5}" ];then
+            log LWARN "MD5不匹配，将重新下载！"
+            wget "${url}" -O "${targetFile}" -c
+        else
+            if [ -z "${md5}" ];then
+                log LWARN "没有指定文件MD5，将不会检查文件是否完整"
+            fi
+
+            log "将使用此本地文件"
+        fi
+
+        chmod +x "${targetFile}"
+        return 0
+    else
+        log "正在下载${name}..."
+        wget "${url}" -O "${targetFile}" -c
+        chmod +x "${targetFile}"
+    fi
+}
+
+#cd到repo根目录
+cd ./../..

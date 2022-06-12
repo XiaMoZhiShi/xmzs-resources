@@ -1,1 +1,1 @@
-tools/makepackage.sh
+./tools/scripts/makepackage.sh

@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e;
 
+DISPLAYNAME="下载资源"
+source "$(dirname "$(readlink -f "$0")")/common/common"
+
 readonly MCVERSION="1.19"
 readonly TARGETURL="https://github.com/InventivetalentDev/minecraft-assets/archive/refs/heads/${MCVERSION}.zip"
 TMPPATH="/dev/shm/mc_assets/"
@@ -13,14 +16,14 @@ readonly TMPPATH;
 
 readonly LINKPATH="${PWD}/build/work"
 
+log "创建构建目录..."
 mkdir -p "${TMPPATH}" && cd "${TMPPATH}"
 
-#好像Unzip暂时不支持从stream读取文件，先下载下来
-wget "${TARGETURL}" -O "${TMPPATH}/assets.zip" -c
+log "准备必要的文件..."
+download true "${TMPPATH}/assets.zip" "1ed9958e16a05dad7d9818fdab600b11" "Minecraft assets" "${TARGETURL}"
 
 unzip -u "${TMPPATH}/assets.zip" -d "${TMPPATH}"
 
 ln "${TMPPATH}/minecraft-assets-${MCVERSION}" "${LINKPATH}" -s
 
-#完成后移除压缩文件
-rm "${TMPPATH}/assets.zip"
+log "完成！"
