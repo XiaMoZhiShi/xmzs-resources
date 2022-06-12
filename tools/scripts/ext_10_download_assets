@@ -22,7 +22,7 @@ mkdir -p "${TMPPATH}" && cd "${TMPPATH}"
 log "准备必要的文件..."
 download true "${TMPPATH}/assets.zip" "1ed9958e16a05dad7d9818fdab600b11" "Minecraft assets" "${TARGETURL}"
 
-unzip -u "${TMPPATH}/assets.zip" -d "${TMPPATH}"
+unzip -u "${TMPPATH}/assets.zip" -d "${TMPPATH}" > "${TMPPATH}/unzip.log"
 
 ln "${TMPPATH}/minecraft-assets-${MCVERSION}" "${LINKPATH}" -s
 
