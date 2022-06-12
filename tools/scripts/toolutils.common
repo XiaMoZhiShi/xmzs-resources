@@ -25,7 +25,7 @@ function download()
         return 0
     else
         log "正在下载${name}..."
-        wget "${url}" -O "${targetFile}" -c
+        wget "${url}" -O "${targetFile}" -c > "${targetFile}.log"
         chmod +x "${targetFile}"
     fi
 }
