@@ -4,10 +4,6 @@ set -e
 DISPLAYNAME="GM4集成"
 source "$(dirname "$(readlink -f "$0")")/common/common"
 
-log LWARN "跳过GM4资源包，目前数据包暂未集成。"
-
-exit 0
-
 cd src_xmzs-resources
 
 if [ -d ext_gm4 ];then
