@@ -604,10 +604,21 @@
             "values":
             [
                 "recovery_compass_10",
-                "mangrove_boat", "mangrove_chest_boat", "mangrove_door", "mangrove_propagule", "mangrove_sign",
+                "mangrove_boat", "mangrove_door", "mangrove_propagule", "mangrove_sign",
                 "music_disc_5", "disc_fragment_5",
                 "goat_horn",
-                "echo_shard"
+                "echo_shard",
+                "tadpole_bucket"
+            ]
+        },
+        //箱船
+        {
+            "prefix": "item/",
+            "suffix": "_chest_boat",
+            "values":
+            [
+                "oak", "spruce", "birch", 
+                "jungle", "acacia", "dark_oak", "mangrove"
             ]
         },
         //1.19 方块
@@ -617,7 +628,8 @@
             [
                 "sculk_shrieker_side", "sculk_catalyst_side",
                 "frogspawn",
-                "ochre_froglight_top", "verdant_froglight_top", "pearlescent_froglight_top"
+                "ochre_froglight_top", "verdant_froglight_top", "pearlescent_froglight_top",
+                "mangrove_trapdoor"
             ]
         },
         //1.19 方块2
@@ -626,7 +638,7 @@
             "prefix": "item/",
             "values":
             [
-                "sculk", "sculk_vein"
+                "sculk", "sculk_vein", "sculk_sensor", "sculk_sensor_lit"
             ]
         }
     ],
