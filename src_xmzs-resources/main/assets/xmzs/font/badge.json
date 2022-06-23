@@ -62,6 +62,13 @@
 			"height": 8,
 			"ascent": 7,
 			"chars": ["7"]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:badges/bakacrystal.png",
+			"height": 8,
+			"ascent": 7,
+			"chars": ["8"]
 		}
 	]
 }

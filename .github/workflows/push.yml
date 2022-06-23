@@ -27,3 +27,4 @@ jobs:
         path: |
           build/
           !build/work
+          !build/temp

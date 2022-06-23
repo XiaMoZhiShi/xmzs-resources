@@ -1,6 +1,6 @@
 build/
 
-ignore_*.xcf
+ignore_*
 
 pack_*
 src_xmzs-resources/ext_gm4

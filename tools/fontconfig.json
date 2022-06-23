@@ -7,6 +7,19 @@
     [
         {
             "type": "raw",
+            "provider":
+            {
+                "type": "bitmap",
+                "file": "gm4:font_magic/spacing_square.png",
+                "ascent": -32768,
+                "height": 3,
+                "chars": [
+                    "\u00a0"
+                ]
+            }
+        },
+        {
+            "type": "raw",
             "skips": 256,
             "provider":
             {
@@ -589,17 +602,6 @@
                 "chorus_flower", "chorus_flower_dead"
             ]
         },
-        //badges
-        {
-            "namespace": "xmzs",
-            "prefix": "badges/",
-            "values":
-            [
-                "laozhengali", "pardofelis", "rozaliya", "liliya",
-                "cacl2", "ningxue0", "emt", "kokomi",
-                "12727337483", "kinopico"
-            ]
-        },
         //brands
         {
             "namespace": "nifeather",
@@ -607,6 +609,49 @@
             "values":
             [
                 "vanilla", "fabric", "quilt", "forge", "bedrock", "fallback"
+            ]
+        },
+        //1.19 物品
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "recovery_compass_10",
+                "mangrove_boat", "mangrove_door", "mangrove_propagule", "mangrove_sign",
+                "music_disc_5", "disc_fragment_5",
+                "goat_horn",
+                "echo_shard",
+                "tadpole_bucket"
+            ]
+        },
+        //箱船
+        {
+            "prefix": "item/",
+            "suffix": "_chest_boat",
+            "values":
+            [
+                "oak", "spruce", "birch", 
+                "jungle", "acacia", "dark_oak", "mangrove"
+            ]
+        },
+        //1.19 方块
+        {
+            "prefix": "block/",
+            "values":
+            [
+                "sculk_shrieker_side", "sculk_catalyst_side",
+                "frogspawn",
+                "ochre_froglight_top", "verdant_froglight_top", "pearlescent_froglight_top",
+                "mangrove_trapdoor"
+            ]
+        },
+        //1.19 方块2
+        {
+            "namespace": "xmzs",
+            "prefix": "item/",
+            "values":
+            [
+                "sculk", "sculk_vein", "sculk_sensor", "sculk_sensor_lit"
             ]
         }
     ],
@@ -619,7 +664,7 @@
         "pack_path": "./build/work",
         "fallback": "xmzs:char/unknown",
         "save_step": false,
-        "spacing_x": 0,
-        "spacing_y": 0
+        "spacing_x": 2,
+        "spacing_y": 3
     }
 }

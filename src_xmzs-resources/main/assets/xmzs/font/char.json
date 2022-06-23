@@ -24,6 +24,12 @@
 			"file": "minecraft:misc/forcefield.png",
 			"ascent": 7,
 			"chars": ["B"]
+		},
+		{
+			"type": "bitmap",
+			"file": "xmzs:misc/empty.png",
+			"ascent": 7,
+			"chars": [" "]
 		}
 	]
 }
