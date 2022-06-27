@@ -419,6 +419,10 @@
   "text.gm4.orbis_pre_gen.spawned": "Spawned ",
   "text.gm4.orbis_pre_gen.spawned.at": " at ",
 
+  "advancement.gm4.better_armour_stands.title": "Gettin' Handsy",
+  "advancement.gm4.better_armour_stands.description": "给你的盔甲架加上手臂",
+  "advancement.gm4.poses_pack.title": "Plenty O' Posing",
+  "advancement.gm4.poses_pack.description": "给你的盔甲架摆个姿势",
   "advancement.gm4.root.title": "Gamemode 4",
   "advancement.gm4.root.description": "关于GM4的二三事",
   "advancement.gm4.block_compressors.title": "压缩一切",
@@ -453,6 +457,8 @@
   "advancement.gm4.tunnel_bores.description": "Obtain a Minecart with Piston",
   "advancement.gm4.rope_ladders.title": "How's It Hanging?",
   "advancement.gm4.rope_ladders.description": "创建一个绳梯",
+
+  "tooltip.gm4.better_armour_stands.invalid_code": "未知代码",
 
   "text.llin.advancement.eat_glow_berry.title": "向我看齐！",
   "text.llin.advancement.eat_glow_berry.description": "我宣布个事儿！",
