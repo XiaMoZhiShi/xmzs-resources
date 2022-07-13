@@ -362,10 +362,11 @@
             ]
         },
         {
-            "prefix": "entity/chest/",
+            "namespace": "xmzs",
+            "prefix": "icons/",
             "values":
             [
-                "normal", "trapped"
+                "chest", "chest_trapped"
             ]
         },
         {
@@ -653,11 +654,20 @@
             [
                 "sculk", "sculk_vein", "sculk_sensor", "sculk_sensor_lit"
             ]
+        },
+        //图标
+        {
+            "namespace": "xmzs",
+            "prefix": "icons/",
+            "values":
+            [
+                "chest_ender", "upgrade"
+            ]
         }
     ],
     "glyph":
     {
-        "enabled": true,
+        "enabled": false,
         "tileSize": 16,
         "from": 0,
         "to": 65536,
