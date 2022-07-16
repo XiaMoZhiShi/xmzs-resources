@@ -9,6 +9,15 @@
 			"chars": [
 				"W"
 			]
+		},
+        {
+			"type": "bitmap",
+			"file": "xmzs:misc/white_30.png",
+			"height": 1024,
+			"ascent": 512,
+			"chars": [
+				"E"
+			]
 		}
     ]
 }
