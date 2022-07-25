@@ -459,6 +459,12 @@
   "advancement.gm4.rope_ladders.description": "创建一个绳梯",
 
   "tooltip.gm4.better_armour_stands.invalid_code": "未知代码",
+  "item.gm4.better_armour_stands.copied_armor_stand.author": "作者",
+  "item.gm4.better_armour_stands.copied_armor_stand.property.custom_pose": "自定义姿势",
+  "item.gm4.better_armour_stands.copied_armor_stand.property.no_base": "无底盘",
+  "item.gm4.better_armour_stands.copied_armor_stand.property.no_gravity": "无重力",
+  "item.gm4.better_armour_stands.copied_armor_stand.property.small": "小体型",
+  "item.gm4.better_armour_stands.copied_armor_stand.property.invisible": "隐形",
 
   "text.llin.advancement.eat_glow_berry.title": "向我看齐！",
   "text.llin.advancement.eat_glow_berry.description": "我宣布个事儿！",
