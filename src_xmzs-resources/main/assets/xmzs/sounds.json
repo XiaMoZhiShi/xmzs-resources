@@ -1,19 +1,35 @@
 {
-    "player.respawn.1": {
-        "category": "music",
-        "sounds": [
+    "nifeather.n3l.subtitle_trigger":
+    {
+        "subtitle": "subtitle.nifeather.n3l.subtitle_trigger",
+        "sounds":
+        [
             {
-                "name": "xmzs:respawn-bgm/1",
-                "stream": true
+                "name": "minecraft:block/enchantment_table/enchant1",
+                "volume": 0.5,
+                "pitch": 1.6
             }
         ]
     },
-    "player.respawn.2": {
-        "category": "music",
-        "sounds": [
+    "nifeather.n3l.subtitle_stop":
+    {
+        "subtitle": "subtitle.nifeather.n3l.subtitle_stop",
+        "sounds":
+        [
             {
-                "name": "xmzs:respawn-bgm/2",
-                "stream": true
+                "name": "minecraft:random/fizz",
+                "volume": 0.5,
+                "pitch": 1.6
+            }
+        ]
+    },
+    "nifeather.nrr.horn":
+    {
+        "subtitle": "subtitle.nifeather.nrr.horn",
+        "sounds":
+        [
+            {
+                "name": "minecraft:item/goat_horn/call6"
             }
         ]
     }

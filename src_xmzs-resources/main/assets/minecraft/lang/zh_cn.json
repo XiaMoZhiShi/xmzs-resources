@@ -472,6 +472,10 @@
   "text.hub.hint": "≡ %1$s | %2$s",
   "text.spreadPotion.height": "80",
 
+  "subtitle.nifeather.n3l.subtitle_trigger": "玩家：副词条激活",
+  "subtitle.nifeather.n3l.subtitle_stop": "玩家：副词条休眠",
+  "subtitle.nifeather.nrr.horn": "多兔袭击：出现兔子",
+
   "Infernal Wings": "炼狱羽翼",
   "Infernal Feather": "炽热之翎",
 
