@@ -9,16 +9,17 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: 缓存assets
+      uses: actions/cache@v3
+      with:
+        path: /dev/shm/mc_assets/assets.zip
+        key: 1145141919810
+
     - name: 刷新软件源
       run: sudo apt update
 
     - name: 安装工具依赖
       run: sudo apt-get install -y gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad
-
-    - name: 缓存assets
-      uses: actions/cache@v3
-      with:
-        path: /dev/shm/mc_assets/assets.zip
 
     - name: 构建
       run: ./makepackage.sh
