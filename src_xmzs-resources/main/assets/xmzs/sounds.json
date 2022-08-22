@@ -5,9 +5,7 @@
         "sounds":
         [
             {
-                "name": "minecraft:block/enchantment_table/enchant1",
-                "volume": 0.5,
-                "pitch": 1.6
+                "name": "minecraft:block/enchantment_table/enchant1"
             }
         ]
     },
@@ -17,9 +15,7 @@
         "sounds":
         [
             {
-                "name": "minecraft:random/fizz",
-                "volume": 0.5,
-                "pitch": 1.6
+                "name": "minecraft:random/fizz"
             }
         ]
     },
