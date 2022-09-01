@@ -1,5 +1,10 @@
 {
     "subtitle.nifeather.n3l.subtitle_trigger": "Player activates subevent",
     "subtitle.nifeather.n3l.subtitle_stop": "Player deactivates subevent",
-    "subtitle.nifeather.nrr.horn": "Rabbit raid: Rabbit appeared"
+    "subtitle.nifeather.nrr.horn": "Rabbit raid: Rabbit appeared",
+
+    "text.hub.hint": "≡ %1$s | %2$s",
+    "text.nifeather.settings.barrier": ": ",
+    "text.nifeather.settings.onset": "Set \"%1$s\" to \"%2$s\"",
+    "text.spreadPotion.height": "80"
 }

@@ -5,6 +5,18 @@
   "%1$s%3427655$s": "%2$s",
   "%1$s%3$s": "%2$s",
 
+  "text.llin.advancement.eat_glow_berry.title": "向我看齐！",
+  "text.llin.advancement.eat_glow_berry.description": "我宣布个事儿！",
+
+  "text.hub.hint": "≡ %1$s | %2$s",
+  "text.nifeather.settings.barrier": "：",
+  "text.nifeather.settings.onset": "已将 ⌈%1$s⌋ 设置为 ⌈%2$s⌋",
+  "text.spreadPotion.height": "80",
+
+  "subtitle.nifeather.n3l.subtitle_trigger": "玩家：副词条激活",
+  "subtitle.nifeather.n3l.subtitle_stop": "玩家：副词条休眠",
+  "subtitle.nifeather.nrr.horn": "多兔袭击：出现兔子",
+
   "pack.gm4.description": "A Gamemode 4 Module",
 
   "lang.gm4.test": "GM4 Language Test",
@@ -465,16 +477,6 @@
   "item.gm4.better_armour_stands.copied_armor_stand.property.no_gravity": "无重力",
   "item.gm4.better_armour_stands.copied_armor_stand.property.small": "小体型",
   "item.gm4.better_armour_stands.copied_armor_stand.property.invisible": "隐形",
-
-  "text.llin.advancement.eat_glow_berry.title": "向我看齐！",
-  "text.llin.advancement.eat_glow_berry.description": "我宣布个事儿！",
-
-  "text.hub.hint": "≡ %1$s | %2$s",
-  "text.spreadPotion.height": "80",
-
-  "subtitle.nifeather.n3l.subtitle_trigger": "玩家：副词条激活",
-  "subtitle.nifeather.n3l.subtitle_stop": "玩家：副词条休眠",
-  "subtitle.nifeather.nrr.horn": "多兔袭击：出现兔子",
 
   "Infernal Wings": "炼狱羽翼",
   "Infernal Feather": "炽热之翎",
