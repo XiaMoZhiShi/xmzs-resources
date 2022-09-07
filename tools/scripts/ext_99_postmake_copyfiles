@@ -14,7 +14,7 @@ for srcName in ./src_*; do
     productName="${srcName/src/pack}"
 
     log "将${srcName}的本体复制到${productName}..."
-    cp "$srcName/main"/* "$productName/" -r || true
+    cp "$srcName/main"/* "$productName/" -r
 
     #复制文件
     #如果有扩展包：
