@@ -2,21 +2,30 @@
 夏沫之诗服务器资源包
 
 本资源包集成了以下内容，以提供更好的服务器体验：
+* [Incendium可选资源包](https://stardustlabs.miraheze.org/wiki/Incendium)
+    * 位于[src_xmzs-resources/ext_incendium](src_xmzs-resources/ext_incendium)
+    * Infernal Wings的模型修复在[src_xmzs-resources/ext_incendium_elytrafix](src_xmzs-resources/ext_incendium_elytrafix)
+
 * [Gamemode4资源包](https://github.com/Gamemode4Dev/GM4_Resources)
     * 集成了除翻译外的内容(gm4_resource_pack)，简体中文翻译由服务器团队自行完成
+    * 位于[src_xmzs-resources/dep_gm4_resources](src_xmzs-resources/dep_gm4_resources)
+    * 构建时会复制文件到`src_xmzs-resources/ext_gm4`
+
 * [基岩版特殊符号](assets/xmzs/textures/bedrock_glyphs/)
     * 来源于Minecraft基岩版内置资源包
-* 资源包封面字体来源于[这里](https://www.lexaloffle.com/bbs/?tid=3760)
+    * 位于[src_xmzs-resources/ext_bedrock_glyph](src_xmzs-resources/ext_bedrock_glyph)
+
 * [来自AmberWat的NegativeSpaceFont](https://github.com/AmberWat/NegativeSpaceFont)
     * 我们作出了以下这些修改：
         * 移除`assets/minecraft/font`目录，避免在游戏内通过正常聊天等方式使用相关功能
         * pack_empty中为了尽可能缩减压缩包大小，只在lang中保留了`space.-36`
+    * 位于以下位置：
+        * [src_xmzs-resources/ext_negative_space](src_xmzs-resources/ext_negative_space)
+        * [src_empty/ext_negative_space](src_empty/ext_negative_space)
+
 * [DartCat25](https://www.planetminecraft.com/member/dartcat25/)的[Menus - Enchanted](https://www.planetminecraft.com/texture-pack/menus-enchanted/)
     * 没有作出任何修改
-* [Re:ゼロから始める異世界生活](http://re-zero-anime.jp/)
-    * player.respawn.1 的音效截取自 Re:ゼロから始める異世界生活 スペシャルサウンドトラック 1 魔女の呼び声
-    * player.respawn.2 的音效截取自 Re:ゼロから始める異世界生活TVアニメーション
-    * 以上版权所有：©長月達平・株式会社KADOKAWA刊／Re:ゼロから始める異世界生活製作委員会
+    * 位于[src_xmzs-resources/ext_menus_enchanted](src_xmzs-resources/ext_menus_enchanted)
 
 ## 资源包特殊符号用法
 
