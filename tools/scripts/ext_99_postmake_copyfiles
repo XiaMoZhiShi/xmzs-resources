@@ -4,6 +4,12 @@ set -e
 DISPLAYNAME="复制或合并文件"
 source "$(dirname "$(readlink -f "$0")")/common/common"
 
+function makeSureHaveDirectory()
+{
+    dirName="$(dirname "${1}")"
+    if [ ! -d "${dirName}" ];then mkdir -p "${dirName}"; fi
+}
+
 for srcName in ./src_*; do
     productName="${srcName/src/pack}"
 
@@ -25,6 +31,7 @@ for srcName in ./src_*; do
                 #包内相对名称
                 fileResolved="${file//$extPack'/'/}"
                 finalFile="${productName}/${fileResolved}"
+                makeSureHaveDirectory "${finalFile}"
 
                 #log "${file} || Resolved ${fileResolved}";
                 #
@@ -77,8 +84,6 @@ for srcName in ./src_*; do
                         echo "${result}" > "${finalFile}"
                     fi;
                 else
-                    dirName="$(dirname ${finalFile})"
-                    if [ ! -d "${dirName}" ];then mkdir -p "${dirName}"; fi
                     cp "${file}" "${finalFile}"
                 fi
 
