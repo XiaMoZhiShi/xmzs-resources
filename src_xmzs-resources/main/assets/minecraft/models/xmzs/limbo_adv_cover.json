@@ -2,5 +2,6 @@
     "parent": "item/generated",
     "textures": {
       "layer0": "xmzs:misc/missing_gray"
-    }
+    },
+    "overrides": []
   }
