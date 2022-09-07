@@ -24,3 +24,7 @@ elif [ -L "build/work" ];then
 fi
 
 mkdir build/temp -p
+
+for src in ./src*; do
+    mkdir -p "${src//src/pack}"
+done
