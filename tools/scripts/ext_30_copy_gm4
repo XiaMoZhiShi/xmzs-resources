@@ -20,3 +20,5 @@ fi;
 
 log "复制GM4文件..."
 cp dep_gm4_resources/gm4_resource_pack/* ext_gm4 -r
+
+rm ext_gm4/pack*

@@ -32,7 +32,7 @@ function download()
 
         if [ -n "${md5}" ] && [ ! "$(md5sum "${targetFile}" | cut -d ' ' -f1)" == "${md5}" ];then
             log LWARN "MD5不匹配，将重新下载！"
-            __toolutils_executeDownload "${url}" "${targetFile}" "${name}"
+            ###__toolutils_executeDownload "${url}" "${targetFile}" "${name}"
         else
             if [ -z "${md5}" ];then
                 log LWARN "没有指定文件MD5，将不会检查文件是否完整"
