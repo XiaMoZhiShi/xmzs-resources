@@ -40,6 +40,9 @@ function makedir()
     fi;
 }
 
+LWD="${PWD}"
+log "启动目录: ${LWD}"
+
 log "初始化submodule..."
 git submodule update --init --recursive || log LWARN "无法初始化submodule，构建可能会出现问题"
 
