@@ -1,19 +1,88 @@
 #!/bin/bash
 set -e
 
-DISPLAYNAME="复制文件"
+DISPLAYNAME="复制或合并文件"
 source "$(dirname "$(readlink -f "$0")")/common/common"
 
 for srcName in ./src_*; do
     productName="${srcName/src/pack}"
 
+    log "将${srcName}的本体复制到${productName}..."
+    cp "$srcName/main"/* "$productName/" -r || true
+
+    #复制文件
+    #如果有扩展包：
     if [ -n "$(ls "$srcName" | grep "ext_")" ];then
+        #遍历扩展包
         for extPack in "$srcName"/ext_*; do
             log "复制${extPack}的文件到${productName}..."
-            cp "$extPack"/* "$productName/" -r
+
+            #获取文件列表
+            files=$(find "${extPack}" -type f)
+
+            #遍历文件来检查，这样允许脚本进行合并JSON这类的操作
+            for file in $files; do
+                #包内相对名称
+                fileResolved="${file//$extPack'/'/}"
+                finalFile="${productName}/${fileResolved}"
+
+                #log "${file} || Resolved ${fileResolved}";
+                #
+                #if [ -f "${productName}"/"${fileResolved}" ];then
+                #    log "FOUND"
+                #fi
+
+                #合并JSON
+                #只合并Minecraft命名空间下的JSON
+                if [[ "$fileResolved" == *minecraft/*.json ]];then
+
+                    #log LWARN "FILE ${fileResolved}"
+
+                    sourceFileContent="$(cat "${file}" 2>/dev/null || true)"
+                    finalFileContent="$(cat "${finalFile}" 2>/dev/null || true)"
+
+                    #确保finalFile不为空
+                    if [ ! -f "${finalFile}" ] || [ -z "${finalFileContent}" ];then
+                            #log LWARN "没有finalFile内容，正在创建"
+                            echo "{}" > "${finalFile}"
+                    fi
+
+                    #确保内容合法
+                    if ! jq < "${finalFile}" >/dev/null; then
+                        #log LWARN "非法JSON内容，正在重置finalFile"
+                        echo "{}" > "${finalFile}"
+                    fi
+
+                    #比较文件内容，如果一样则跳过，不要合并
+                    if [ "${finalFileContent}" == "${sourceFileContent}" ];then
+                        true
+                        #log LINFO "SAME ${file} --- ${finalFile}"
+                    else
+                        log LINFO "MERG ${file} --- ${finalFile}"
+
+                        #合并结果
+                        #根据类型合并
+                        if [[ "${file}" == *minecraft/models/* ]];then
+                            #先合并overrides
+                            result="$(jq 'reduce inputs as $i (.; .overrides += $i.overrides)' "${file}" "${finalFile}")"
+                            
+                            #然后根据CustomModelData排序
+                            #不排序会有问题
+                            result=$(echo "${result}" | jq '.overrides|=sort_by(.predicate.custom_model_data)')
+                        else
+                            result="$(jq -s '.[1] * .[0]' "${file}" "${finalFile}")"
+                        fi
+
+                        #输出内容
+                        echo "${result}" > "${finalFile}"
+                    fi;
+                else
+                    dirName="$(dirname ${finalFile})"
+                    if [ ! -d "${dirName}" ];then mkdir -p "${dirName}"; fi
+                    cp "${file}" "${finalFile}"
+                fi
+
+            done
         done;
     fi
-
-    log "将${srcName}的本体复制到${productName}..."
-    cp "$srcName/main"/* "$productName/" -r
 done;
