@@ -4,7 +4,7 @@
 本资源包集成了以下内容，以提供更好的服务器体验：
 * [Incendium可选资源包](https://stardustlabs.miraheze.org/wiki/Incendium)
     * 位于[src_xmzs-resources/ext_incendium](src_xmzs-resources/ext_incendium)
-    * Infernal Wings的模型修复在[src_xmzs-resources/ext_incendium_elytrafix](src_xmzs-resources/ext_incendium_elytrafix)
+    * Scout's Battle Helm和Infernal Wings的CIT修复在[src_xmzs-resources/ext_incendium_fixes](src_xmzs-resources/ext_incendium_fixes)
 
 * [Gamemode4资源包](https://github.com/Gamemode4Dev/GM4_Resources)
     * 集成了除翻译外的内容(gm4_resource_pack)，简体中文翻译由服务器团队自行完成
