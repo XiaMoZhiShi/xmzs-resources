@@ -1,0 +1,6 @@
+{
+    "parent": "item/elytra",
+    "textures": {
+        "layer0": "xmzs:item/elytra_devteam"
+    }
+}

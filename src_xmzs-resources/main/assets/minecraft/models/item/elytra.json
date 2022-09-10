@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/elytra"
+  },
+  "overrides": [
+        {
+            "predicate": {
+              "custom_model_data": 2450000
+            },
+            "model": "xmzs:item/elytra_devteam"
+        },
+        {
+          "predicate": {
+            "custom_model_data": 2450001
+          },
+          "model": "xmzs:item/elytra_builder"
+      }
+    ]
+}
