@@ -22,8 +22,8 @@ function makepack()
     local directoryName="${directory##*/}"
     local finalName="${directoryName//pack_/}"
 
-    local option_gen="pack_directory = '$directory'
-output_file_path = '$PWD/build/${directoryName//pack_/}.zip'
+    local option_gen="pack_directory = '${directory}'
+output_file_path = '$PWD/build/${finalName}.zip'
 $(cat "$directory/config.toml")"
 
     echo "$option_gen" | tools/packsquash || die 1 "打包时出现问题($?)，配置文件是：${option_gen}"
@@ -64,3 +64,4 @@ for d in pack_* ;do
 done;
 
 log "完成!"
+removepid
