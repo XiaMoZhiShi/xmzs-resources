@@ -22,6 +22,7 @@ mkdir -p "${TMPPATH}" && cd "${TMPPATH}"
 log "准备必要的文件..."
 download true "${TMPPATH}/assets.zip" "f1c2ff235b79bf752e86794a95bf5eff" "Minecraft assets" "${TARGETURL}"
 
+log "解压assets"
 unzip -u "${TMPPATH}/assets.zip" -d "${TMPPATH}" > "${TMPPATH}/unzip.log"
 
 for d in "${TMPPATH}"/*; do
