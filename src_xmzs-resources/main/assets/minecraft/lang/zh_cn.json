@@ -522,6 +522,7 @@
   "Beyond the Embers": "余烬之下",
   "The Dust Settles": "尘埃落定",
   "Pocket Edition Alpha": "我的世界口袋版",
+  "Rescue Mission": "救援行动",
 
   "Incendium":"Incendium",
   "Explore the terrifying, and rewarding, Incendium Nether":"探索恐怖但奖励丰厚的Incendium下界吧",
@@ -583,6 +584,7 @@
   "Spectral arrows leave": "射出光灵箭时",
   "a trail of blaze.": "会留下烈焰轨迹。",
   "Holy Wrath": "神怒",
+  "Restless Nature": "不息之质",
   "Spawn a spiral of fireballs": "生成螺旋形的火球",
   "Emits a strange light which": "散发着奇异的光芒",
   "blinds nearby desert blazes": "置于背包中时会",
@@ -602,9 +604,12 @@
   "Has a chance to drop gold": "击杀生物时",
   "when killing any mob": "有概率掉落金子",
   "Warping Witherblade": "诡异凋零之刃",
-  "Used by the wither king Mors to": "曾被凋零之王摩尔斯用于在战争中",
-  "corrupt and torment the piglins": "侵蚀并折磨猪灵",
-  "and their ancient forests in war...": "以及他们的远古森林...",
+  "\"For in life all things return": "\"世间万物终会回归",
+  "to death, and in death all things": "死亡，而已逝之物",
+  "return to the shadow of ": "也终会归于",
+  "A seed infused by spirits": "一颗被幽灵注入的种子",
+  "with a final wish to regrow": "最终希望",
+  "the lost nature of the Nether": "能重振下界失落的本性",
 
   "is becoming unstable the longer you hold it's power within": "的能量正变得愈发不稳定",
   "is becoming more unstable during the storm": "在雷暴天变得非常不稳定",
@@ -657,6 +662,7 @@
   "Discover every type of loot in a Nether Reactor": "发现下界反应堆的每一种战利品",
   "The piglin's experiments backfired leading to a dangerous situation": "猪灵的实验事与愿违导致了不妙的情况",
   "The Illagers' Sanctum might not be so holy...": "灾厄村民的神圣之所可能没有那么神圣…",
+  "Enter the Quartz Tower, the prison of the Ghastling": "进入石英塔，关押恶魂之灵的监牢",
   
 
   "Your": "你的",

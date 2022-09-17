@@ -4,8 +4,8 @@ set -e;
 DISPLAYNAME="下载资源"
 source "$(dirname "$(readlink -f "$0")")/common/common"
 
-readonly MCVERSION="1.19"
-readonly TARGETURL="https://github.com/InventivetalentDev/minecraft-assets/archive/refs/heads/${MCVERSION}.zip"
+readonly MCVERSION="1.19.2"
+readonly TARGETURL="https://github.com/InventivetalentDev/minecraft-assets/zipball/refs/heads/${MCVERSION}"
 TMPPATH="${TMPPATH:-/dev/shm/mc_assets/}"
 
 if [ ! -d "/dev/shm" ];then
@@ -20,10 +20,25 @@ log "创建构建目录..."
 mkdir -p "${TMPPATH}" && cd "${TMPPATH}"
 
 log "准备必要的文件..."
-download true "${TMPPATH}/assets.zip" "70ce3faf618230d5c38e800f45ef92a4" "Minecraft assets" "${TARGETURL}"
+download true "${TMPPATH}/assets.zip" "f1c2ff235b79bf752e86794a95bf5eff" "Minecraft assets" "${TARGETURL}"
 
 unzip -u "${TMPPATH}/assets.zip" -d "${TMPPATH}" > "${TMPPATH}/unzip.log"
 
-ln "${TMPPATH}/minecraft-assets-${MCVERSION}" "${LINKPATH}" -s
+for d in "${TMPPATH}"/*; do
+    log "Trying $d"
+    if [[ "${d}" == *"minecraft-assets-${MCVERSION}" ]] && [ -d "${d}" ];then
+        targetDir="$(basename "${d}")"
+        break;
+    elif [[ "${d}" == *"InventivetalentDev-minecraft-assets"* ]] && [ -d "${d}" ];then
+        targetDir="$(basename "${d}")"
+        break;
+    fi
+done
+
+if [ -z "${targetDir}" ];then
+    die 2 "未能找到下载的Assets"
+fi
+
+ln "${TMPPATH}/${targetDir}" "${LINKPATH}" -s
 
 log "完成！"
