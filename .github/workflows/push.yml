@@ -22,7 +22,7 @@ jobs:
       run: sudo apt update
 
     - name: 安装工具依赖
-      run: sudo apt-get install -y gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad
+      run: sudo apt-get install -y gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad libfuse2
 
     - name: 构建
       run: ./makepackage.sh
