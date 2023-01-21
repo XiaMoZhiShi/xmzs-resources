@@ -20,7 +20,7 @@ log "创建构建目录..."
 mkdir -p "${TMPPATH}" && cd "${TMPPATH}"
 
 log "准备必要的文件..."
-download true "${TMPPATH}/assets.zip" "f1c2ff235b79bf752e86794a95bf5eff" "Minecraft assets" "${TARGETURL}"
+download true "${TMPPATH}/assets.zip" "ffbe13253e603a026eee80caeb967569" "Minecraft assets" "${TARGETURL}"
 
 log "解压assets"
 unzip -u "${TMPPATH}/assets.zip" -d "${TMPPATH}" > "${TMPPATH}/unzip.log"

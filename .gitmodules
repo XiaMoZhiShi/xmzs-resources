@@ -1,3 +1,6 @@
 [submodule "src_xmzs-resources/dep_gm4_resources"]
 	path = src_xmzs-resources/dep_gm4_resources
 	url = https://github.com/Gamemode4Dev/GM4_Resources.git
+[submodule "src_xmzs-resources/ext_incendium"]
+	path = src_xmzs-resources/ext_incendium
+	url = https://github.com/Stardust-Labs-MC/Incendium-Optional-Resourcepack.git
