@@ -4,7 +4,7 @@ set -e;
 DISPLAYNAME="下载资源"
 source "$(dirname "$(readlink -f "$0")")/common/common"
 
-readonly MCVERSION="1.19.3"
+readonly MCVERSION="1.20"
 readonly TARGETURL="https://github.com/InventivetalentDev/minecraft-assets/zipball/refs/heads/${MCVERSION}"
 TMPPATH="${TMPPATH:-/dev/shm/mc_assets/}"
 
@@ -20,7 +20,7 @@ log "创建构建目录..."
 mkdir -p "${TMPPATH}" && cd "${TMPPATH}"
 
 log "准备必要的文件..."
-download true "${TMPPATH}/assets.zip" "ffbe13253e603a026eee80caeb967569" "Minecraft assets" "${TARGETURL}"
+download true "${TMPPATH}/assets.zip" "41002decaf5cd1b96d8224c4528cf76f" "Minecraft assets" "${TARGETURL}"
 
 log "解压assets"
 unzip -u "${TMPPATH}/assets.zip" -d "${TMPPATH}" > "${TMPPATH}/unzip.log"

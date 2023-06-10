@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ ! -d build/work ];then
+    mkdir -vp build/work
+fi
+
+set -e
+
+DISPLAYNAME="字体生成"
+source "$(dirname "$(readlink -f "$0")")/common/common"
+#rm src_xmzs-resources/ext_gm4/assets/gm4/textures/gui/**/* -r
