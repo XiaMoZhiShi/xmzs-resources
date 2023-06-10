@@ -650,6 +650,78 @@
             [
                 "chest_ender", "upgrade"
             ]
+        },
+        //1.20悬挂式告示牌
+        {
+            "prefix": "item/",
+            "suffix": "_hanging_sign",
+            "values":
+            [
+                "oak", "spruce", "birch", 
+                "jungle", "acacia", "dark_oak", "mangrove"
+            ]
+        },
+        //1.20樱花树和竹船
+        {
+            "prefix": "item/cherry_",
+            "values":
+            [
+                "sign", "boat", "door", "chest_boat", "hanging_sign"
+            ]
+        },
+        //1.20新船
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "bamboo_raft", "bamboo_chest_raft", "cherry_boat", "cherry_chest_boat"
+            ]
+        },
+        //1.20 升级锻造模板
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "netherite_upgrade_smithing_template"
+            ]
+        },
+        //1.20锻造模板
+        {
+            "prefix": "item/",
+            "suffix": "_armor_trim_smithing_template",
+            "values":
+            [
+                "sentry", "vex", "wild", "coast", "dune", "wayfinder",
+                "raiser", "shaper", "host", "ward", "silence",
+                "tide", "snout", "rib", "eye", "spire"
+            ]
+        },
+        //1.20陶片
+        {
+            "prefix": "item/",
+            "suffix": "_pottery_sherd",
+            "values":
+            [
+                "angler", "archer", "arms_up", "blade", "brewer",
+                "burn", "danger", "explorer", "friend", "heart", "heartbreak",
+                "howl", "miner", "mourner", "plenty", "prize", "sheaf",
+                "shelter", "skull", "snort"
+            ]
+        },
+        //1.20新唱片
+        {
+            "prefix": "item/",
+            "values": [ "music_disc_relic" ]
+        },
+        //1.20嗅嗅
+        {
+            "prefix": "item/",
+            "values":
+            [
+                "sniffer_egg",
+                "torchflower_seeds", "pitcher_pod",
+                "pitcher_plant" //, "torchflower
+            ]
         }
     ],
     "glyph":
