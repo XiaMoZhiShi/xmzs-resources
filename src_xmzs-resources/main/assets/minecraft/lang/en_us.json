@@ -6,5 +6,7 @@
     "text.hub.hint": "≡ %1$s | %2$s",
     "text.nifeather.settings.barrier": ": ",
     "text.nifeather.settings.onset": "Set \"%1$s\" to \"%2$s\"",
-    "text.spreadPotion.height": "80"
+    "text.spreadPotion.height": "80",
+
+    "xm.tr": "%s",
 }
