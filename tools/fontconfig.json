@@ -413,7 +413,7 @@
                 "nether_sprouts", "nether_star", "painting",
                 "paper", "pointed_dripstone", "popped_chorus_fruit",
                 "prismarine_crystals", "prismarine_shard",
-                "rabbit_hide", "scute", "seagrass", "sea_pickle",
+                "rabbit_hide", "turtle_scute", "armadillo_scute", "seagrass", "sea_pickle",
                 "shulker_shell", "slime_ball", "snowball", "spectral_arrow",
                 "stick", "string", "structure_void", "sugar", "totem_of_undying",
                 "turtle_egg", "wheat", "chain"
@@ -434,27 +434,30 @@
                 "unluck", "water_breathing", "weakness", "wither"
             ]
         },
-        //地图
+        //地图 #1
         {
-            "type": "tilemap",
-            "ascent": 7,
-            "tile":
-            {
-                "glyph_ignore": false,
-                "size": 8,
-                "startsAt":
-                {
-                    "x": 0,
-                    "y": 0
-                },
-                "endsAt":
-                {
-                    "x": 10,
-                    "y": 1
-                },
-                "resource_location": "minecraft:map/map_icons.png",
-                "texture_path": "./build/work"
-            }
+            "prefix": "map/decorations/",
+            "suffix": "banner",
+            "values":
+            [
+                "black_", "blue_",
+                "brown_", "cyan_", "gray_",
+                "green_", "light_blue_", "light_gray_",
+                "lime_", "magenta_", "orange_",
+                "pink_", "purple_", "red_", "white_",
+                "yellow_"
+            ]
+        },
+        //地图 #2
+        {
+            "prefix": "map/decorations/",
+            "values":
+            [
+                "blue_marker", "desert_village", "frame", "jungle_temple",
+                "ocean_monument", "plains_village", "player", "player_off_limits",
+                "player_off_map", "red_marker", "red_x", "savanna_village", "snowy_village", "swamp_hut",
+                "taiga_village", "target_point", "target_x", "trial_chambers", "woodland_mansion"
+            ]
         },
         //玻璃
         {

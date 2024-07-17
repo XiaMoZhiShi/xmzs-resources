@@ -9,7 +9,7 @@ function __toolutils_executeDownload()
 
     log "正在下载${name}..."
 
-    if ! wget "${url}" -O "${target}" -c 2> "${logFile}";then
+    if ! wget "${url}" -O "${target}" -c;then
         local retCode=$?
         local tail10n="$(tail -n10 "${logFile}")"
         log LERRO "无法下载${name}：${tail10n:-未知异常}"
@@ -32,9 +32,10 @@ function download()
 
         local existmd5="$(md5sum "${targetFile}" | cut -d ' ' -f1)";
         if [ -n "${md5}" ] && [ ! "${existmd5}" == "${md5}" ];then
-            log LWARN "MD5不匹配，将重新下载！(${existmd5} != ${md5})"
-            rm "${targetFile}"
-            __toolutils_executeDownload "${url}" "${targetFile}" "${name}"
+            log LWARN "MD5不匹配，将中断！(${existmd5} != ${md5})"
+            return 1
+            #rm "${targetFile}"
+            #__toolutils_executeDownload "${url}" "${targetFile}" "${name}"
         else
             if [ -z "${md5}" ];then
                 log LWARN "没有指定文件MD5，将不会检查文件是否完整"
