@@ -1,31 +1,21 @@
 {
-  "pack": {
-      "description": [
-          {
-              "translate": "%1$s%3427655$s",
-              "with": [
-                  [
-                      [
-                          "",
-                          "夏沫之诗"
-                      ]
-                  ],
-                  [
-                      {
-                          "translate": "offset.-36",
-                          "font": "space:default",
-                          "with": [
-                              {
-                                  "text": "1",
-                                  "font": "xmzs:cover"
-                              }
-                          ],
-                          "color": "white"
-                      }
-                  ]
-              ]
-          }
-      ],
-      "pack_format": 12
-  }
+    "pack":
+    {
+        "description":
+        [
+            {
+                "translate": "offset.-36",
+                "font": "space:default",
+                "with":
+                [
+                    {
+                        "text": "1",
+                        "font": "xmzs:cover"
+                    }
+                ],
+                "color": "white"
+            }
+        ],
+        "pack_format": 34
+    }
 }
